@@ -26,17 +26,9 @@ classDiagram
     }
 
     Task * -- User 
-    Task * -- Comment 
     Task * -- Tag 
 
-    class Comment {
-        +int id
-        +String content
-        +Date created_at
-        +Date updated_at
-        +createComment()
-        +deleteComment()
-    }
+   
 
     class Tag {
         +int id
